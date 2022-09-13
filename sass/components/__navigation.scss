@@ -1,0 +1,24 @@
+.nav-list {
+  display: flex;
+}
+.nav {
+  display: none;
+}
+.logo {
+  &__text {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(46 / 36);
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    color: white;
+  }
+  &__description {
+    font-family: Caveat, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(46 / 36);
+    letter-spacing: 0.03em;
+  }
+}
