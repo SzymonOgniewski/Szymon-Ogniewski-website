@@ -7,27 +7,55 @@
     <title>Szymon Ogniewski CV</title>
     <link href="css/main.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500&family=Italianno&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:wght@600&family=Questrial&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap"
-      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
     />
   </head>
   <body>
     <header>
       <div class="container">
-        <div>
-          <span class="logo__text">Szymon Ogniewski</span><br /><span
-            class="logo__description"
-            >Wanna be... <br />
-            <span>Frontend Developer</span></span
+        <div class="page-header">
+          <div>
+            <span class="logo__text">Szymon Ogniewski</span><br /><span
+              class="logo__description"
+              >Wanna be... <br />
+              <span>Frontend Developer</span></span
+            >
+          </div>
+          <!-- <button
+            class="js-open-menu page-header__menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
           >
+            <svg class="page-header__burger-icon" width="15px" height="15px">
+              <use href="./images/icons.svg#nav-icon"></use>
+            </svg>
+          </button> -->
+          <div class="menu-toggle" id="menuToggle">
+            <input type="checkbox" class="menu-toggle__input"/./>
+            <span class="menu-toggle__burger-strap"></span>
+            <span class="menu-toggle__burger-strap"></span>
+            <span class="menu-toggle__burger-strap"></span>
+
+            <ul class="mobile-nav-list" id="menu">
+              <a class="mobile-nav-list__link"><li>Home</li></a>
+
+              <a class="mobile-nav-list__link"><li>About me</li></a>
+
+              <a class="mobile-nav-list__link"><li>Portfolio</li></a>
+
+              <a class="mobile-nav-list__link"><li>Contact</li></a>
+
+              <a class="mobile-nav-list__link"><li>My Github</li></a>
+            </ul>
+          </div>
         </div>
         <nav class="nav">
           <ul class="nav-list">
@@ -48,25 +76,30 @@
             </li>
           </ul>
         </nav>
-        <div class="mobile-navigation">
+        <!-- <div class="js-menu-container menu-container" id="mobile-menu">
+          <button class="mobile-menu__close-button js-close-menu">
+            <svg width="18px" height="18px">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
           <ul class="mobile-nav-list">
-            <li>
-              <a class="mobile-nav-list__item">Home</a>
+            <li class="mobile-nav-list__item">
+              <a class="mobile-nav-list__item--link">Home</a>
             </li>
-            <li>
-              <a class="mobile-nav-list__item">About me</a>
+            <li class="mobile-nav-list__item">
+              <a class="mobile-nav-list__item--link">About me</a>
             </li>
-            <li>
-              <a class="mobile-nav-list__item">Portfolio</a>
+            <li class="mobile-nav-list__item">
+              <a class="mobile-nav-list__item--link">Portfolio</a>
             </li>
-            <li>
-              <a class="mobile-nav-list__item">Contact</a>
+            <li class="mobile-nav-list__item">
+              <a class="mobile-nav-list__item--link">Contact</a>
             </li>
-            <li>
-              <a class="mobile-nav-list__item">My Github</a>
+            <li class="mobile-nav-list__item">
+              <a class="mobile-nav-list__item--link">My Github</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
     <main>
@@ -79,5 +112,12 @@
     </main>
     <div class="container"></div>
     <footer></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
