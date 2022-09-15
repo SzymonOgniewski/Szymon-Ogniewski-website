@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+
   &__menu-toggle {
     padding-top: 15px;
     width: 20px;
@@ -67,6 +68,4 @@
 }
 .menu-container.is-open {
   transform: translateX(20vw);
-}
-.mobile-menu-list {
 }
