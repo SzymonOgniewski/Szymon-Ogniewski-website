@@ -69,3 +69,26 @@
 .menu-container.is-open {
   transform: translateX(20vw);
 }
+.mobile-menu-list {
+  margin-top: 35px;
+  &__item {
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    &:hover {
+      color: tomato;
+      border-color: tomato;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &--link {
+      padding-left: 5px;
+      padding-bottom: 2px;
+      font-family: DM sans, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: calc(28 / 20);
+    }
+  }
+}
