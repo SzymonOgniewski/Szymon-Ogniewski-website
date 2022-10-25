@@ -1,16 +1,16 @@
- $color: (
-    
-  'text-color-light': #ffffff,
-  
+$color: (
+  "color-yellow": #deb992,
+  "color-green": #1ba098,
+  "color-dark-green": #051622,
+  "color-light": white,
 );
 @function getColor($key) {
   @return map-get($color, $key);
 }
 
 $fontfamily: (
-  'brand-font': 'Titan One',
-  'description-font': 'DM Sans',
-  'sans-serif': sans-serif,
+  "main-font": "Raleway",
+  "sans-serif": sans-serif,
 );
 @function getFF($key) {
   @return map-get($fontfamily, $key);

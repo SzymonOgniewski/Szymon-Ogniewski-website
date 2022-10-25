@@ -1,0 +1,15 @@
+.contact-section {
+  color: getColor(color-yellow);
+  border-bottom: 1px solid getColor(color-yellow);
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    color: getColor(color-green);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 15px;
+  }
+}

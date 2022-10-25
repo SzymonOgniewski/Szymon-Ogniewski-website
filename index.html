@@ -7,103 +7,134 @@
     <title>Szymon Ogniewski CV</title>
     <link href="css/main.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500&family=Italianno&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
     />
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="page-header">
-          <div>
-            <span class="logo__text">Szymon Ogniewski</span><br /><span
-              class="logo__description"
-              >Wanna be... <br />
-              <span class="logo__description--last"
-                >Frontend Developer</span
-              ></span
-            >
-          </div>
-          <button
-            class="js-open-menu page-header__menu-toggle"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            type="button"
-          >
-            <svg class="page-header__burger-icon" width="20px" height="20px">
-              <use href="./images/icons.svg#nav-icon"></use>
-            </svg>
-          </button>
-          
+      <section class="page-header">
+        <div class="mobile-header">
+          <img class="logo" src="/images/logo.svg" alt="website logo" />
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle" class="mobile-nav__toggle">
+              <input type="checkbox" class="mobile-nav__toggle--input" />
+              <span class="mobile-nav__toggle--strap"></span>
+              <span class="mobile-nav__toggle--strap"></span>
+              <span class="mobile-nav__toggle--strap"></span>
+              <ul id="menu" class="mobile-nav__toggle--menu">
+                <a href="#" class="mobile-menu__link"><li>About me</li></a>
+                <a href="#" class="mobile-menu__link"><li>My skills</li></a>
+                <a href="#" class="mobile-menu__link"><li>Portfolio</li></a>
+                <a href="#" class="mobile-menu__link"><li>Contact</li></a>
+                <a class="mobile-menu__link"><li>My GitHub</li></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+          <div class="nav-menu">
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__item--link">About me</a></li>
+              <li class="nav__item">
+                <a class="nav__item--link">My skills</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item--link">Portfolio</a>
+              </li>
+              <li class="nav__item"><a class="nav__item--link">Contact</a></li>
+            </ul>
+            <div class="my-gh">
+              <a class="my-gh__link"
+                ><svg class="my-gh__link--icon"><use></use></svg>My GitHub</a
+              >
+            </div>
           </div>
         </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li>
-              <a><button class="nav-list__button">Home</button></a>
-            </li>
-            <li>
-              <a><button class="nav-list__button">About me</button></a>
-            </li>
-            <li>
-              <a><button class="nav-list__button">Portfolio</button></a>
-            </li>
-            <li>
-              <a><button class="nav-list__button">Contact</button></a>
-            </li>
-            <li>
-              <a><button class="nav-list__button">My Github</button></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="js-menu-container menu-container" id="mobile-menu">
-          <button class="menu-container__close-button js-close-menu">
-            <svg class="menu-container__close-button--icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__item--link">Home</a>
-            </li>
-            <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__item--link">About me</a>
-            </li>
-            <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__item--link">Portfolio</a>
-            </li>
-            <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__item--link">Contact</a>
-            </li>
-            <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__item--link">My Github</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </header>
     <main>
       <div class="container">
-        <!-- aboutme -->
-        <ul>
-          <li></li>
-        </ul>
+        <section class="about-me">
+          <div class="about-me__box">
+            <img
+              class="about-me__box--photo"
+              src="/images/myphoto.jpg"
+              alt="bald cute man"
+            />
+          </div>
+          <ul class="about-me__list">
+            <li class="about-me__list--item">
+              <h1 class="my-name">Szymon Ogniewski</h1>
+            </li>
+            <li class="about-me__list--item">
+              <h2 class="section-header">About me</h2>
+            </li>
+            <li class="about-me__list--item">
+              <p class="about-me__list--item--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ultricies nisl risus donec auctor fames. Eget pellentesque
+                posuere tellus, adipiscing quisque dui, placerat hendrerit. Sit
+                vitae senectus ultricies habitant velit. Sollicitudin
+                ullamcorper amet, justo, elementum ac egestas ornare. Non
+                condimentum suscipit sed ultrices hac lacus quam amet. Donec
+                facilisi amet a ipsum ac neque, in nisl, tristique. Urna
+                condimentum tristique sit rhoncus vel.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="my-skills">
+          <h2 class="section-header">My skills</h2>
+          <ul class="my-skills__list">
+            <li class="my-skills__list--card my-skills__list--card--first">
+              School <br />
+              & <br />Courses
+            </li>
+            <li class="my-skills__list--card my-skills__list--card--second">
+              Coding skills
+            </li>
+            <li class="my-skills__list--card my-skills__list--card--third">
+              Language skills
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="section-header">Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__list--item">
+              <img
+                class="portfolio__image"
+                src="images/webs.png"
+                alt="webstudio website project"
+              /><button class="portfolio__image--desc-btn">Description</button>
+            </li>
+            <li class="portfolio__list--item">
+              <img
+                class="portfolio__image"
+                src="images/lody.png"
+                alt="project of website about icecreams "
+              /><button class="portfolio__image--desc-btn">Description</button>
+            </li>
+          </ul>
+        </section>
       </div>
     </main>
-    <div class="container"></div>
-    <footer></footer>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <footer>
+      <div class="container">
+        <h2 class="section-header contact-section">Contact</h2>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__item--link">My e-mail:</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__item--link">My phone number:</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__item--link">My GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

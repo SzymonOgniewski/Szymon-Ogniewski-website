@@ -4,10 +4,13 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  font-family: getFF(main-font), getFF(sans-serif);
 }
 
 body {
-  background: #232323;
+  background: getColor(color-dark-green);
+  overflow-x: hidden;
+  width: 100%;
 }
 .container {
   padding-left: 10px;
@@ -16,7 +19,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -24,8 +27,20 @@ body {
     max-width: 1024px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .container {
-    max-width: 1200px;
+    max-width: 1600px;
   }
+}
+.section-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: getColor(color-green);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-bottom: solid 1px getColor(color-green);
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  padding-left: 5px;
 }
