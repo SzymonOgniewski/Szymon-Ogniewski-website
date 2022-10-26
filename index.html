@@ -17,17 +17,29 @@
         <div class="mobile-header">
           <img class="logo" src="./images/logo.svg" alt="website logo" />
           <nav role="navigation" class="mobile-nav">
-            <div id="menuToggle" class="mobile-nav__toggle">
+            <div class="mobile-nav__toggle">
               <input type="checkbox" class="mobile-nav__toggle--input" />
               <span class="mobile-nav__toggle--strap"></span>
               <span class="mobile-nav__toggle--strap"></span>
               <span class="mobile-nav__toggle--strap"></span>
-              <ul id="menu" class="mobile-nav__toggle--menu">
-                <a href="#" class="mobile-menu__link"><li>About me</li></a>
-                <a href="#" class="mobile-menu__link"><li>My skills</li></a>
-                <a href="#" class="mobile-menu__link"><li>Portfolio</li></a>
-                <a href="#" class="mobile-menu__link"><li>Contact</li></a>
-                <a class="mobile-menu__link"><li>My GitHub</li></a>
+              <ul class="mobile-nav__toggle--menu">
+                <a href="#about-me" class="mobile-menu__link"
+                  ><li>About me</li></a
+                >
+                <a href="#my-skills" class="mobile-menu__link"
+                  ><li>My skills</li></a
+                >
+                <a href="#portfolio" class="mobile-menu__link"
+                  ><li>Portfolio</li></a
+                >
+                <a href="#contact" class="mobile-menu__link"
+                  ><li>Contact</li></a
+                >
+                <a
+                  href="https://github.com/SzymonOgniewski?tab=repositories"
+                  class="mobile-menu__link"
+                  ><li>My GitHub</li></a
+                >
               </ul>
             </div>
           </nav>
@@ -35,17 +47,23 @@
         <div class="container">
           <div class="nav-menu">
             <ul class="nav">
-              <li class="nav__item"><a class="nav__item--link">About me</a></li>
               <li class="nav__item">
-                <a class="nav__item--link">My skills</a>
+                <a href="#about-me" class="nav__item--link">About me</a>
               </li>
               <li class="nav__item">
-                <a class="nav__item--link">Portfolio</a>
+                <a href="#my-skills" class="nav__item--link">My skills</a>
               </li>
-              <li class="nav__item"><a class="nav__item--link">Contact</a></li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__item--link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__item--link">Contact</a>
+              </li>
             </ul>
             <div class="my-gh">
-              <a class="my-gh__link"
+              <a
+                href="https://github.com/SzymonOgniewski?tab=repositories"
+                class="my-gh__link"
                 ><svg class="my-gh__link--icon"><use></use></svg>My GitHub</a
               >
             </div>
@@ -65,7 +83,7 @@
           </div>
           <ul class="about-me__list">
             <li class="about-me__list--item">
-              <h1 class="my-name">Szymon Ogniewski</h1>
+              <h1 id="about-me" class="my-name">Szymon Ogniewski</h1>
             </li>
             <li class="about-me__list--item">
               <h2 class="section-header">About me</h2>
@@ -79,7 +97,9 @@
                 ullamcorper amet, justo, elementum ac egestas ornare. Non
                 condimentum suscipit sed ultrices hac lacus quam amet. Donec
                 facilisi amet a ipsum ac neque, in nisl, tristique. Urna
-                condimentum tristique sit rhoncus vel.
+                condimentum tristique sit rhoncus vel.<span
+                  id="my-skills"
+                ></span>
               </p>
             </li>
           </ul>
@@ -98,6 +118,7 @@
               Language skills
             </li>
           </ul>
+          <span id="portfolio" class="break"></span>
         </section>
         <section>
           <h2 class="section-header">Portfolio</h2>
@@ -122,16 +143,26 @@
     </main>
     <footer>
       <div class="container">
-        <h2 class="section-header contact-section">Contact</h2>
+        <h2 id="contact" class="section-header contact-section">Contact</h2>
         <ul class="contact-list">
           <li class="contact-list__item">
-            <a class="contact-list__item--link">My e-mail:</a>
+            <a
+              href="mailto:szymonogniewski00@gmail.com"
+              class="contact-list__item--link"
+              >My e-mail: szymonogniewski00@gmail.com</a
+            >
           </li>
           <li class="contact-list__item">
-            <a class="contact-list__item--link">My phone number:</a>
+            <a href="tel:728954482" class="contact-list__item--link"
+              >My phone number: 728 954 482</a
+            >
           </li>
           <li class="contact-list__item">
-            <a class="contact-list__item--link">My GitHub</a>
+            <a
+              href="https://github.com/SzymonOgniewski?tab=repositories"
+              class="contact-list__item--link"
+              >My GitHub</a
+            >
           </li>
         </ul>
       </div>

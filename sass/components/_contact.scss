@@ -5,11 +5,35 @@
 .contact-list {
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
   &__item {
     color: getColor(color-green);
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
     padding-bottom: 15px;
+    position: relative;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 5px;
+      left: 0;
+      background-color: getColor(color-green);
+      transform-origin: bottom right;
+      transition: transform 0.45s ease-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    &--link {
+      color: getColor(color-green);
+    }
   }
 }
