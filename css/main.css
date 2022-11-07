@@ -53,12 +53,16 @@ html {
 
 .mobile-menu__link {
   text-decoration: none;
-  color: #3f3f3f;
-  transition: color 0.3s ease;
+  color: #202020;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1;
 }
 
 .mobile-menu__link:hover {
-  color: white;
+  font-weight: 600;
+  transition: font-weight 0.3s ease;
 }
 
 .mobile-nav {
@@ -151,7 +155,6 @@ html {
 
 .mobile-nav__toggle--menu li {
   padding: 10px 0;
-  font-size: 22px;
 }
 
 .mobile-nav__toggle--input:checked ~ .mobile-nav__toggle--menu {
@@ -180,7 +183,7 @@ html {
 .logo:hover {
   border: none;
   transform: scale(1.07);
-  transition: all ease 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .mobile-header {
