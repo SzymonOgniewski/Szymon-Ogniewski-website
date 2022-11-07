@@ -1,11 +1,11 @@
 .mobile-menu__link {
   text-decoration: none;
-  color: getColor(color-yellow);
+  color: getColor(secondary-dark-color);
   transition: color 0.3s ease;
 }
 
 .mobile-menu__link:hover {
-  color: getColor(color-green);
+  color: getColor(text-color-light);
 }
 .mobile-nav {
   position: fixed;
@@ -48,7 +48,8 @@
   height: 4px;
   position: relative;
 
-  background: getColor(color-yellow);
+  background-color: getColor(color-light-yellow);
+
   border-radius: 3px;
 
   z-index: 1;
@@ -70,7 +71,7 @@
 .mobile-nav__toggle--input:checked ~ .mobile-nav__toggle--strap {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: getColor(color-yellow);
+  background-color: getColor(text-color-light);
 }
 
 .mobile-nav__toggle--input:checked
@@ -93,12 +94,7 @@
   padding: 50px;
   padding-top: 125px;
   right: -10px;
-  border-left: solid 2px getColor(color-green);
-  background: radial-gradient(
-    circle,
-    rgba(27, 160, 152, 1) 0%,
-    rgba(5, 22, 34, 1) 100%
-  );
+  background-color: getColor(color-light-yellow);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -129,20 +125,23 @@
   }
 }
 .logo {
-  background-color: getColor(color-green);
+  background-color: getColor(color-light-yellow);
   border-radius: 50%;
   border: none;
   margin-top: 15px;
   width: 60px;
   height: 60px;
+  &:hover {
+    border: none;
+    transform: scale(1.07);
+    transition: all ease 0.3s;
+  }
 }
 
 .mobile-header {
   position: fixed;
   padding-bottom: 10px;
   padding-left: 10px;
-  border-bottom: solid 2px getColor(color-yellow);
   width: 100%;
   z-index: 2;
-  background-color: getColor(color-dark-green);
 }

@@ -1,13 +1,12 @@
 .contact-section {
-  color: getColor(color-yellow);
-  border-bottom: 1px solid getColor(color-yellow);
+  color: getColor(color-light-grey);
+  border-bottom: 1px solid getColor(color-light-yellow);
 }
 .contact-list {
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
   &__item {
-    color: getColor(color-green);
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -16,24 +15,49 @@
     &:not(:first-child) {
       margin-top: 10px;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 1px;
-      bottom: 5px;
-      left: 0;
-      background-color: getColor(color-green);
-      transform-origin: bottom right;
-      transition: transform 0.45s ease-out;
-    }
-    &:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+
     &--link {
-      color: getColor(color-green);
+      color: getColor(color-light-grey);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        color: getColor(color-light-yellow);
+        transition: color 0.3s ease;
+        fill: getColor(color-light-yellow);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 5px;
+        left: 0;
+        background-color: getColor(color-light-yellow);
+        transform-origin: bottom right;
+        transition: transform 0.45s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
+}
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: getColor(color-light-grey);
+}
+.contact-icon:hover .contact-list__item--link {
+  color: getColor(color-light-yellow);
+  transition: color 0.3s ease;
+  fill: getColor(color-light-yellow);
+}
+.contact-list__item--link:hover .contact-icon {
+  color: getColor(color-light-yellow);
+  transition: fill 0.3s ease;
+  fill: getColor(color-light-yellow);
 }

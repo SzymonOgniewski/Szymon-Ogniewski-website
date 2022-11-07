@@ -12,10 +12,12 @@
     />
   </head>
   <body>
-    <header>
+    <header id="to-top">
       <section class="page-header">
         <div class="mobile-header">
-          <img class="logo" src="./images/logo.svg" alt="website logo" />
+          <a href="#to-top">
+            <img class="logo" src="./images/logo.svg" alt="website logo" />
+          </a>
           <nav role="navigation" class="mobile-nav">
             <div class="mobile-nav__toggle">
               <input type="checkbox" class="mobile-nav__toggle--input" />
@@ -83,7 +85,9 @@
           </div>
           <ul class="about-me__list">
             <li class="about-me__list--item">
-              <h1 id="about-me" class="my-name">Szymon Ogniewski</h1>
+              <h1 class="my-name">Szymon Ogniewski</h1>
+              <h2 class="my-spec">Frontend Developer</h2>
+              <span id="about-me"></span>
             </li>
             <li class="about-me__list--item">
               <h2 class="section-header">About me</h2>
@@ -107,15 +111,65 @@
         <section class="my-skills">
           <h2 class="section-header">My skills</h2>
           <ul class="my-skills__list">
-            <li class="my-skills__list--card my-skills__list--card--first">
-              School <br />
-              & <br />Courses
+            <li class="my-skills__list--item">
+              <h3 class="sub-category__title">School & Courses</h3>
+              <ul class="sub-category__list">
+                <li class="sub-category__list--item">
+                  <span class="date">2019-2022</span>University of Warmia and
+                  Mazury on faculty of Management
+                </li>
+                <li class="sub-category__list--item">
+                  <span class="date">2022-2023</span>GOIT Fullstack Developer
+                  course
+                </li>
+              </ul>
             </li>
-            <li class="my-skills__list--card my-skills__list--card--second">
-              Coding skills
+            <li class="my-skills__list--item">
+              <h3 class="sub-category__title">Programming skills</h3>
+              <ul class="sub-category__list">
+                <li class="sub-category__list--item">
+                  <svg class="tech-icon">
+                    <use href="./images/symbol-defs.svg#icon-html"></use>
+                  </svg>
+                  <p class="tech-icon__text">I feel very familiar with HTML</p>
+                </li>
+                <li class="sub-category__list--item">
+                  <svg class="tech-icon">
+                    <use href="./images/symbol-defs.svg#icon-css3"></use>
+                  </svg>
+                  <p class="tech-icon__text">I feel very familiar with CSS</p>
+                </li>
+                <li class="sub-category__list--item">
+                  <svg class="tech-icon">
+                    <use href="./images/symbol-defs.svg#icon-javascript"></use>
+                  </svg>
+                  <p class="tech-icon__text">I am beginner in JavaScript</p>
+                </li>
+                <li class="sub-category__list--item">
+                  <svg class="tech-icon">
+                    <use href="./images/symbol-defs.svg#icon-react"></use>
+                  </svg>
+                  <p class="tech-icon__text">
+                    I'm definitely going to learn React
+                  </p>
+                </li>
+              </ul>
+              <h3 class="sub-category__title">I also know:</h3>
+              <ul class="sub-category__list">
+                <li class="sub-category__list--item">
+                  Mobile first methodology
+                </li>
+                <li class="sub-category__list--item">BEM methodology</li>
+                <li class="sub-category__list--item">Preprocessor SASS/SCSS</li>
+              </ul>
             </li>
-            <li class="my-skills__list--card my-skills__list--card--third">
-              Language skills
+            <li class="my-skills__list--item">
+              <h3 class="sub-category__title">Language skills</h3>
+              <ul class="sub-category__list">
+                <li class="sub-category__list--item">
+                  English on level of intermediate / upper-intermediate
+                </li>
+              </ul>
             </li>
           </ul>
           <span id="portfolio" class="break"></span>
@@ -149,11 +203,15 @@
             <a
               href="mailto:szymonogniewski00@gmail.com"
               class="contact-list__item--link"
+              ><svg class="contact-icon">
+                <use href="./images/symbol-defs.svg#icon-envelop"></use></svg
               >My e-mail: szymonogniewski00@gmail.com</a
             >
           </li>
           <li class="contact-list__item">
-            <a href="tel:728954482" class="contact-list__item--link"
+            <a href="tel:728954482" class="contact-list__item--link">
+              <svg class="contact-icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use></svg
               >My phone number: 728 954 482</a
             >
           </li>
@@ -161,6 +219,8 @@
             <a
               href="https://github.com/SzymonOgniewski?tab=repositories"
               class="contact-list__item--link"
+              ><svg class="contact-icon">
+                <use href="./images/symbol-defs.svg#icon-github"></use></svg
               >My GitHub</a
             >
           </li>

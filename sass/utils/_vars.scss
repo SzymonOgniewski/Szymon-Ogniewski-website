@@ -1,8 +1,15 @@
+// $color: (
+//   "color-yellow": #deb992,
+//   "color-green": #1ba098,
+//   "color-dark-green": #051622,
+//   "color-light": white,
+// );
 $color: (
-  "color-yellow": #deb992,
-  "color-green": #1ba098,
-  "color-dark-green": #051622,
-  "color-light": white,
+  "primary-dark-color": #202020,
+  "secondary-dark-color": #3f3f3f,
+  "color-light-grey": #707070,
+  "text-color-light": white,
+  "color-light-yellow": #ffdf6c,
 );
 @function getColor($key) {
   @return map-get($color, $key);

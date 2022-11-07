@@ -8,7 +8,16 @@
 }
 
 body {
-  background: getColor(color-dark-green);
+  // background: getColor(color-dark-green);
+  // background-color: getColor(primary-dark-color);
+  background: linear-gradient(
+    130deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(48, 48, 48, 1) 25%,
+    rgba(57, 57, 57, 1) 50%,
+    rgba(52, 52, 52, 1) 75%,
+    rgba(32, 32, 32, 1) 100%
+  );
   overflow-x: hidden;
   width: 100%;
 }
@@ -35,10 +44,10 @@ body {
 .section-header {
   font-size: 24px;
   font-weight: 500;
-  color: getColor(color-green);
+  color: getColor(color-light-grey);
   line-height: 1;
   letter-spacing: 0.01em;
-  border-bottom: solid 1px getColor(color-green);
+  border-bottom: solid 1px getColor(color-light-yellow);
   padding-bottom: 10px;
   margin-bottom: 35px;
   margin-top: 115px;
