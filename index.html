@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css"
+      integrity="sha512-ka1/Z+PCN6JAoOVT50Ujjhq74r3hE0r433lM5X3VlLmxXRRkAJIPSXiZlccGx6Syd56QW+rPoYaLHm5iIPthLg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header id="to-top">
@@ -94,16 +101,18 @@
             </li>
             <li class="about-me__list--item">
               <p class="about-me__list--item--text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ultricies nisl risus donec auctor fames. Eget pellentesque
-                posuere tellus, adipiscing quisque dui, placerat hendrerit. Sit
-                vitae senectus ultricies habitant velit. Sollicitudin
-                ullamcorper amet, justo, elementum ac egestas ornare. Non
-                condimentum suscipit sed ultrices hac lacus quam amet. Donec
-                facilisi amet a ipsum ac neque, in nisl, tristique. Urna
-                condimentum tristique sit rhoncus vel.<span
-                  id="my-skills"
-                ></span>
+                I am a hard-working junior frontend developer and I can easily
+                establish contact with new people. I have experience working in
+                larger and smaller teams. I am very communicative and opened to
+                new acquintances. My main passion is programming and I am very
+                motivated to learn new technologies. My focus goes on JavaScript
+                currently, but my next goal is to learn React. In my spare time
+                I enjoy designing projects of websites using Figma, playing MMO
+                games or watching TV series. I am also trying to keep good
+                balance between my work and pleasures. The way I do that is
+                planning almost every day so that I have fresh mind to learn and
+                understand new things easily and also i have some time to rest.
+                <span id="my-skills"></span>
               </p>
             </li>
           </ul>
@@ -115,8 +124,8 @@
               <h3 class="sub-category__title">School & Courses</h3>
               <ul class="sub-category__list">
                 <li class="sub-category__list--item">
-                  <span class="date">2019-2022</span>University of Warmia and
-                  Mazury on faculty of Management
+                  <span class="date">2019-2022</span>Management on Univeristy of
+                  Warmia and Mazury
                 </li>
                 <li class="sub-category__list--item">
                   <span class="date">2022-2023</span>GOIT Fullstack Developer
@@ -176,22 +185,60 @@
         </section>
         <section>
           <h2 class="section-header">Portfolio</h2>
-          <ul class="portfolio__list">
-            <li class="portfolio__list--item">
-              <img
-                class="portfolio__image"
-                src="images/webs.png"
-                alt="webstudio website project"
-              /><button class="portfolio__image--desc-btn">Description</button>
-            </li>
-            <li class="portfolio__list--item">
-              <img
-                class="portfolio__image"
-                src="images/lody.png"
-                alt="project of website about icecreams "
-              /><button class="portfolio__image--desc-btn">Description</button>
-            </li>
-          </ul>
+          <div class="gallery">
+            <a class="gallery__link" href="./images/webstudio.png"
+              ><img
+                class="gallery__image"
+                src="./images/webstudio-small.png"
+                alt="Webstudio website project"
+                title="Webstudio website is a solo project made for the GOIT Fullstack Developer Course. It is first project i have ever done. Website made with HTML and CSS only."
+              />
+            </a>
+            <a class="gallery__link" href="./images/ice-cream.png"
+              ><img
+                class="gallery__image"
+                src="./images/ice-cream-small.png"
+                alt="Ice-cream webstie team project"
+                title="Ice-cream website is a team project made in a group of 5 contributors for the GOIT Fullstack Developer Course. Students were supposed to focus only on HTML and CSS aspects using Parcel project template."
+              />
+            </a>
+          </div>
+          <div class="portfolio-link-box">
+            <h3 class="portfolio-link-box__header">
+              Feel welcome to visit websites or check them on my GitHub!
+            </h3>
+            <ul class="portfolio-list">
+              <li class="portfolio-list__item">
+                <p class="portfolio-list__item--name">Webstudio project</p>
+                <a
+                  href="https://szymonogniewski.github.io/goit-markup-hw-08/"
+                  class="portfolio-list__item--link"
+                  target="_blank"
+                  >Visit website</a
+                >
+                <a
+                  href="https://github.com/SzymonOgniewski/goit-markup-hw-08"
+                  class="portfolio-list__item--link"
+                  target="_blank"
+                  >Check on GitHub</a
+                >
+              </li>
+              <li class="portfolio-list__item">
+                <p class="portfolio-list__item--name">Ice Cream project</p>
+                <a
+                  href="https://szymonogniewski.github.io/ice-cream-team-project/"
+                  class="portfolio-list__item--link"
+                  target="_blank"
+                  >Visit website</a
+                ><a
+                  href="https://github.com/SzymonOgniewski/ice-cream-team-project"
+                  class="portfolio-list__item--link"
+                  target="_blank"
+                  >Check on GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
@@ -227,5 +274,12 @@
         </ul>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"
+      integrity="sha512-IKDNPsyNuvwDr8D2nIcJVgNFuj3XXdV0jJ5S6E+nYwl5RiLxrd51TnDJDN1lQJrVdF4K849Lizr12ZCZV81MoA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/gallery.js" type="module"></script>
   </body>
 </html>

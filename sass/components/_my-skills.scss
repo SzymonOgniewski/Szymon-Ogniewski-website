@@ -22,6 +22,7 @@
       font-weight: 300;
       color: getColor(text-color-light);
       display: flex;
+      gap: 10px;
       &:not(:last-child) {
         padding-bottom: 15px;
       }
@@ -30,9 +31,8 @@
 }
 .date {
   font-weight: 600;
-  border-bottom: 1px solid getColor(color-light-grey);
   padding-bottom: 3px;
-  margin-right: 10px;
+  min-width: 85px;
 }
 .tech-icon {
   width: 20px;
