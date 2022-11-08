@@ -19,21 +19,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    max-width: 767px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .container {
-    max-width: 1600px;
-  }
-}
 .section-header {
   font-size: 24px;
   font-weight: 500;
@@ -47,6 +32,24 @@ body {
   padding-left: 5px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+  }
+  .section-header {
+    font-size: 32px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -162,16 +165,6 @@ html {
   opacity: 1;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .mobile-nav {
-    display: none;
-  }
-}
 .logo {
   background-color: #ffdf6c;
   border-radius: 50%;
@@ -194,6 +187,19 @@ html {
   z-index: 2;
 }
 
+@media screen and (max-width: 1023px) {
+  .nav-menu {
+    display: none;
+  }
+  .logo-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
+}
 .about-me {
   padding-top: 25px;
 }
@@ -233,6 +239,24 @@ html {
   padding-bottom: 5px;
 }
 
+@media screen and (min-width: 1024px) {
+  .my-name {
+    font-size: 42px;
+    font-weight: 500;
+  }
+  .my-spec {
+    font-weight: 600;
+    font-size: 48px;
+  }
+  .about-me__box--photo {
+    width: 350px;
+  }
+  .about-me__list--item--text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
+  }
+}
 .my-skills__list {
   display: flex;
   flex-direction: column;
@@ -277,6 +301,20 @@ html {
   padding-left: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .sub-category__title {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .sub-category__list--item {
+    font-size: 20px;
+  }
+}
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
@@ -367,6 +405,17 @@ html {
   transition: font-weight 0.3s ease;
 }
 
+@media screen and (min-width: 1024px) {
+  .portfolio-link-box__header {
+    font-size: 30px;
+  }
+  .portfolio-list__item--name {
+    font-size: 24px;
+  }
+  .portfolio-list__item--link {
+    font-size: 20px;
+  }
+}
 .contact-section {
   color: #707070;
   border-bottom: 1px solid #ffdf6c;
@@ -432,4 +481,103 @@ html {
   color: #ffdf6c;
   transition: fill 0.3s ease;
   fill: #ffdf6c;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-list__item {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    margin-left: 30px;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .nav__item--link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffdf6c;
+    letter-spacing: 0.01em;
+    display: inline-block;
+    position: relative;
+  }
+  .nav__item--link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffdf6c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .nav__item--link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .my-gh {
+    padding-top: 20px;
+    margin-right: 30px;
+  }
+  .my-gh__link {
+    font-size: 18px;
+    color: #ffdf6c;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    display: flex;
+    position: relative;
+  }
+  .my-gh__link--text {
+    align-self: center;
+  }
+  .my-gh__link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffdf6c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .my-gh__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .my-gh__link--icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: #ffdf6c;
+  }
+  .logo-desktop {
+    background-color: #ffdf6c;
+    border-radius: 50%;
+    border: none;
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40px;
+    right: 40px;
+  }
+  .logo-desktop:hover {
+    border: none;
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+  }
 }/*# sourceMappingURL=main.css.map */

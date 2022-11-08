@@ -61,3 +61,11 @@
   transition: fill 0.3s ease;
   fill: getColor(color-light-yellow);
 }
+
+@media screen and (min-width: 1024px) {
+  .contact-list {
+    &__item {
+      font-size: 20px;
+    }
+  }
+}

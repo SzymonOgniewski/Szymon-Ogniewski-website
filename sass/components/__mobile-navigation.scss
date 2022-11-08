@@ -117,16 +117,6 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .mobile-nav {
-    display: none;
-  }
-}
 .logo {
   background-color: getColor(color-light-yellow);
   border-radius: 50%;
@@ -147,4 +137,17 @@
   padding-left: 10px;
   width: 100%;
   z-index: 2;
+}
+@media screen and (max-width: 1023px) {
+  .nav-menu {
+    display: none;
+  }
+  .logo-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
 }

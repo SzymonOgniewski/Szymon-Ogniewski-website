@@ -54,6 +54,13 @@
           </nav>
         </div>
         <div class="container">
+          <a href="#to-top">
+            <img
+              class="logo-desktop"
+              src="./images/logo.svg"
+              alt="website logo"
+            />
+          </a>
           <div class="nav-menu">
             <ul class="nav">
               <li class="nav__item">
@@ -73,8 +80,12 @@
               <a
                 href="https://github.com/SzymonOgniewski?tab=repositories"
                 class="my-gh__link"
-                ><svg class="my-gh__link--icon"><use></use></svg>My GitHub</a
               >
+                <svg class="my-gh__link--icon">
+                  <use href="./images/symbol-defs.svg#icon-github"></use>
+                </svg>
+                <p class="my-gh__link--text">My GitHub</p>
+              </a>
             </div>
           </div>
         </div>
@@ -94,10 +105,10 @@
             <li class="about-me__list--item">
               <h1 class="my-name">Szymon Ogniewski</h1>
               <h2 class="my-spec">Frontend Developer</h2>
-              <span id="about-me"></span>
+              <span id="about-me" class="about-me-mobile-id"></span>
             </li>
             <li class="about-me__list--item">
-              <h2 class="section-header">About me</h2>
+              <h2 class="section-header about-me-desktop-id">About me</h2>
             </li>
             <li class="about-me__list--item">
               <p class="about-me__list--item--text">
@@ -108,19 +119,19 @@
                 motivated to learn new technologies. In my work I am always
                 trying to provide clean and understandable for others code. My
                 focus goes on JavaScript currently, but my next goal is to learn
-                React. In my spare time I enjoy designing projects of websites
-                using Figma, playing MMO games or watching TV series. I am also
-                trying to keep good balance between my work and pleasures. The
-                way I do that is planning almost every day so that I have fresh
-                mind to learn and understand new things easily and also i have
-                some time to rest.
-                <span id="my-skills"></span>
+                React. In my spare time I enjoy learning designing projects of
+                websites using Figma, playing MMO games or watching TV series. I
+                am also trying to keep good balance between my work and
+                pleasures. The way I do that is planning almost every day so
+                that I have fresh mind to learn and understand new things easily
+                and also I have some time to rest.
+                <span id="my-skills" class="my-skills-mobile-id"></span>
               </p>
             </li>
           </ul>
         </section>
         <section class="my-skills">
-          <h2 class="section-header">My skills</h2>
+          <h2 class="section-header my-skills-desktop-id">My skills</h2>
           <ul class="my-skills__list">
             <li class="my-skills__list--item">
               <h3 class="sub-category__title">School & Courses</h3>
@@ -172,6 +183,9 @@
                 </li>
                 <li class="sub-category__list--item">BEM methodology</li>
                 <li class="sub-category__list--item">Preprocessor SASS/SCSS</li>
+                <li class="sub-category__list--item">
+                  GitHub quite well as beginner programmer
+                </li>
               </ul>
             </li>
             <li class="my-skills__list--item">
@@ -183,12 +197,12 @@
               </ul>
             </li>
           </ul>
-          <span id="portfolio" class="break"></span>
+          <span id="portfolio" class="portfolio-mobile-id"></span>
         </section>
         <section>
-          <h2 class="section-header">Portfolio</h2>
+          <h2 class="section-header portfolio-desktop-id">Portfolio</h2>
           <div class="gallery">
-            <a class="gallery__link" href="./images/webstudio-mobile.jpg"
+            <a class="gallery__link link1" href="./images/webstudio.png"
               ><img
                 class="gallery__image"
                 src="./images/webstudio.png"
@@ -196,7 +210,7 @@
                 title="Webstudio website is a solo project made for the GOIT Fullstack Developer Course. It is first project i have ever done. Website made with HTML and CSS only."
               />
             </a>
-            <a class="gallery__link" href="./images/ice-cream.png"
+            <a class="gallery__link link2" href="./images/ice-cream.png"
               ><img
                 class="gallery__image"
                 src="./images/ice-cream.png"
@@ -283,5 +297,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script defer src="./js/gallery.js" type="module"></script>
+    <script defer src="./js/id-change.js" type="module"></script>
   </body>
 </html>
