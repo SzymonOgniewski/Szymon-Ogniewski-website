@@ -21,6 +21,8 @@
 
 .gallery__image {
   border-radius: 4px;
+  min-width: 300px;
+  max-width: 450px;
   height: 100%;
   width: 100%;
   transition: transform var(--animation-duration) var(--timing-function);
