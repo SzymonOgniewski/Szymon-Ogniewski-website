@@ -2,6 +2,12 @@
   &__list {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    &--item {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 }
 .sub-category {
@@ -11,10 +17,11 @@
     line-height: 1;
     letter-spacing: 0.01em;
     color: getColor(color-light-yellow);
-    padding-bottom: 20px;
   }
   &__list {
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     &--item {
       font-size: 16px;
       letter-spacing: 0.01em;
@@ -23,15 +30,11 @@
       color: getColor(text-color-light);
       display: flex;
       gap: 10px;
-      &:not(:last-child) {
-        padding-bottom: 15px;
-      }
     }
   }
 }
 .date {
   font-weight: 600;
-  padding-bottom: 3px;
   min-width: 85px;
 }
 .tech-icon {

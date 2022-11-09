@@ -204,9 +204,9 @@ html {
   padding-top: 25px;
 }
 .about-me__box {
+  padding-bottom: 25px;
   padding-top: 80px;
   text-align: center;
-  padding-bottom: 25px;
 }
 .about-me__box--photo {
   border-radius: 50%;
@@ -230,13 +230,13 @@ html {
 }
 
 .my-spec {
+  padding-top: 20px;
+  padding-bottom: 5px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: #ffdf6c;
-  padding-top: 20px;
-  padding-bottom: 5px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -260,6 +260,12 @@ html {
 .my-skills__list {
   display: flex;
   flex-direction: column;
+  gap: 25px;
+}
+.my-skills__list--item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .sub-category__title {
@@ -268,10 +274,11 @@ html {
   line-height: 1;
   letter-spacing: 0.01em;
   color: #ffdf6c;
-  padding-bottom: 20px;
 }
 .sub-category__list {
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .sub-category__list--item {
   font-size: 16px;
@@ -282,13 +289,9 @@ html {
   display: flex;
   gap: 10px;
 }
-.sub-category__list--item:not(:last-child) {
-  padding-bottom: 15px;
-}
 
 .date {
   font-weight: 600;
-  padding-bottom: 3px;
   min-width: 85px;
 }
 
@@ -346,8 +349,6 @@ html {
 }
 
 .gallery__link {
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
   height: 100%;
 }
@@ -368,13 +369,13 @@ html {
 }
 
 .portfolio-link-box__header {
-  padding-top: 50px;
   color: #707070;
   font-size: 26px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 .portfolio-list__item {
@@ -425,19 +426,16 @@ html {
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+  gap: 25px;
 }
 .contact-list__item {
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
-  padding-bottom: 15px;
   position: relative;
 }
-.contact-list__item:not(:first-child) {
-  margin-top: 10px;
-}
 .contact-list__item--link {
-  color: #707070;
+  color: #a3a2a2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,7 +466,7 @@ html {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  fill: #707070;
+  fill: #a3a2a2;
 }
 
 .contact-icon:hover .contact-list__item--link {
@@ -497,7 +495,6 @@ html {
     margin-left: 30px;
     padding-top: 26px;
     display: flex;
-    flex-direction: row;
     gap: 40px;
   }
   .nav__item--link {

@@ -13,3 +13,5 @@ if (mediaQuery.matches) {
   portfolioDesktop.id = "portfolio";
   mySkillsDesktop.id = "my-skills";
 }
+
+// This script is made because of position:fixed on navigation for mobile&tablets, so that scrolling on desktop works different than on mobiles and tablets
